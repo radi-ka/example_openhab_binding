@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="DummyBinding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+                          xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <thing-type id="example-text">
+        <label>Text Output</label>
+        <description>some description</description>
+
+        <channels>
+            <channel id="example-text" typeId="example-text" />
+        </channels>
+
+        <config-description>
+            <parameter name="name" type="text" required="true">
+                <label>Name</label>
+                <description>your name</description>
+            </parameter>
+        </config-description>
+    </thing-type>
+
+    <channel-type id="example-text">
+        <item-type>String</item-type>
+        <label>Text</label>
+        <description>example text</description>
+        <state readOnly="true"/>
+    </channel-type>
+</thing:thing-descriptions>

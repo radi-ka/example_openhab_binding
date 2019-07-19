@@ -1,0 +1,5 @@
+.idea/**
+addons/**
+project/**
+!project/build.properties
+!project/osgi.sbt
