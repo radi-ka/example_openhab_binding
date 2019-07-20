@@ -20,6 +20,8 @@ val deps = Seq(
 
 libraryDependencies ++= deps.map(_ exclude("org.eclipse.smarthome.test", "*"))
 
+libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.26" % "provided"
+
 enablePlugins(SbtOsgi)
 
 osgiSettings
